@@ -308,10 +308,10 @@ public class display extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(!txtImage.getText().isEmpty() && !txtpenerbit.getText().isEmpty() && !txtauthor.getText().isEmpty() 
                 && !txtdes.getText().isEmpty()){
-          String img = txtImage.getText();
-          String penerbit = txtpenerbit.getText();
-          String author = txtauthor.getText();
-          String des = txtdes.getText();
+          String img = jTextField4.getText();
+          String penerbit = jTextField5.getText();
+          String author = jTextField6.getText();
+          String des = jTextField7.getText();
           dbcon.Query("insert into tabel_buku (img, penerbit, author, deskr)"
                     + "values ('" + img + "', '" + penerbit + "', '" + author + "', '" + des + "')");
         TxtTableBuku.setModel(dbcon.readBuku());
